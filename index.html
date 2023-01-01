@@ -15,11 +15,36 @@
       html{
         height: 100%;
       }
+      div{
+        width: 100px;
+        height: 100px;
+        animation: anime 5s;
+        -webkit-animation: anime 5s;
+        background: cyan;
+        @keyframes anime {
+        from {
+          background: cyan;
+        }
+        to{
+          background: green;
+        }
+        @-webkit-keyframes anime {
+          from {
+            background: cyan;
+          }
+          to{
+            background: yellow;
+          }
+      }
+      }
+    }
 
     </style>
 </head>
 <body>
-    <img src="A.png"> Girl</img>
+    <!-- <img src="A.png"> Girl</img> -->
+    
+    <div><img src="A.png"> Girl</img></div>
     <h1> Heading </h1>
   <p> Happy New Year !</p>
     <a href="./link.html">hyperlink</a>
