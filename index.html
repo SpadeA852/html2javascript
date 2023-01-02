@@ -15,40 +15,73 @@
       html{
         height: 100%;
       }
-      div{
-        width: 100px;
-        height: 100px;
-        animation: anime 5s;
-        -webkit-animation: anime 5s;
-        background: cyan;
-      }
-        @keyframes anime {
-        from {
-          background: cyan;
-        }
-        to{
-          background: green;
-        }
-      }
-        @-webkit-keyframes anime {
+
+        /* @keyframes anime {
           from {
             background: cyan;
           }
           to{
             background: yellow;
           }
+      } */
+        @-webkit-keyframes anime {
+          0% {
+          opacity: 0;
+          }
+          50% {
+          opacity: 100;
+          }
+          75%{
+            opacity:0;
+          }
+          100%{
+            opacity: 0;
+          }
       }
-      
-    
+      @-webkit-keyframes anime2 {
+          0% {
+          opacity: 0;
+          }
+          50% {
+          opacity: 0;
+          }
+          75%{
+            opacity:100;
+          }
+          100%{
+            opacity: 0;
+          }
+      }
+      h1,a{
+        font-size: 20px;
+
+        width: 150px;
+        /* animation: anime 2s;
+        animation-iteration-count: infinite; */
+        -webkit-animation: anime 5s infinite;
+      }
+      p{
+        font-size: 20px;
+        position: absolute;
+        width: 150px;
+      }
+      #happy{
+        -webkit-animation: anime 5s infinite;
+      }
+      #hello{
+        -webkit-animation: anime2 5s infinite;
+      }
 
     </style>
 </head>
 <body>
     <!-- <img src="A.png"> Girl</img> -->
-    
-    <div></div>
+    <audio src="R.wav" controls = "controls" loop="loop"></audio>
+    <div><img width=350px src="C.png"> Girl</img></div>
     <h1> Heading </h1>
-  <p> Happy New Year !</p>
-    <a href="./link.html">hyperlink</a>
+  <p id="happy"> Happy New Year !</p>
+  <p id="hello"> Hello World</p>
+    <a href="./link.html">hyperlink</a>     &nbsp &nbsp&nbsp&nbsp&nbsp
+    <a href="./page_animation.html" style="color:blue">hyper2link</a>
 </body>
 </html>
