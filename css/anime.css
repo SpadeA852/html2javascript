@@ -23,6 +23,8 @@
         #a2{
             animation:anime1 5s infinite;
             background-color: red;
+            background-image: url(../B.png);
+            color: orange;
         }
         #a3{
             animation:anime2 5s infinite;
@@ -31,6 +33,32 @@
         #a4{
             animation:anime3 5s infinite;
             background-color: black;
+        }
+        #y{
+            font-size: 50px;
+            display: block;
+            color: yellow;
+            animation:anime4 5s infinite;
+        }
+        @keyframes anime4{
+            0% {
+                opacity: 0;
+            }
+            25%{
+                opacity:0;
+            }
+            50% {
+                opacity: 0;
+            }
+            75%{
+                opacity:0%;
+            }
+            90%{
+                opacity:0%;
+            }
+            100%{
+                opacity: 100;
+            }
         }
         @keyframes anime{
             0% {
